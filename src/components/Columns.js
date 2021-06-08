@@ -1,0 +1,73 @@
+export const COLUMNS = [
+    {
+        Header: 'Project',
+        accessor:'project'
+    },
+    {
+        Header:'Course',
+        accessor:'course'
+    },
+    {
+        Header:'Person',
+        accessor:'person'
+        
+    },
+    {
+        Header:'Email',
+        accessor:'email'
+    },
+    {
+        Header:'Department',
+        accessor:'department'
+    },
+    {
+        Header:'location',
+        accessor:'location'
+    },
+    {
+        Header:'courseStartedDate',
+        accessor:'courseStartedDate'
+    },
+    {
+        Header:'openedLessonsCount',
+        accessor:'openedLessonsCount'
+    },
+    {
+        Header:'completedDate',
+        accessor:'completedDate'
+    },
+    {
+        Header:'completedLessonsCount',
+        accessor:'completedLessonsCount'
+    },
+    {
+        Header:'totalLessonsCount',
+        accessor:'totalLessonsCount'
+    },
+    {
+        Header:'haveNotStarted',
+        accessor:'haveNotStarted'
+    },
+    {
+        Header:'notOnSchedule',
+        accessor:'notOnSchedule'
+    },
+    {
+        Header:'haveStarted',
+        accessor:'haveStarted'
+    },
+    {
+        Header:'quizScore',
+        accessor:'quizScore'
+    },
+    {
+        Header:'quizScoreTotal',
+        accessor:'quizScoreTotal'
+    },
+    {
+        Header:'certificateTitle',
+        accessor:'certificateTitle'
+    },
+]
+
+ 
