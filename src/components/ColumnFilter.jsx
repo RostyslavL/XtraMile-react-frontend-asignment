@@ -2,13 +2,20 @@ import React from 'react'
 
 export const ColumnFilter = ({ column }) => {
   const { filterValue, setFilter } = column
+
+  const inputStyle = {
+    borderRadius:'5px',
+    '&:focus': {
+      outline: 'none'
+    }
+}
   return (
-    <span>
-      Search:{' '}
-      <input
+    <input
+        style={inputStyle}
+        placeholder="Search"
         value={filterValue || ''}
-        onChange={e => setFilter(e.target.value)}
-      />
-    </span>
+        onChange={e => setFilter(e.target.value)}>
+    </input>
   )
 }
+

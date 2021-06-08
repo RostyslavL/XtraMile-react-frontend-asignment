@@ -1,8 +1,9 @@
 import React , {useEffect, useState, useMemo }from 'react'
 import { useTable, useFilters, useGlobalFilter ,useSortBy} from 'react-table'
 import { COLUMNS } from './Columns'
-import './table.css'
 import { FaSortAmountUp, FaSortAmountDown } from 'react-icons/fa'
+import {Navbar,Table } from 'react-bootstrap'
+
 
 export const FilteringTable = () =>{
 
@@ -36,32 +37,52 @@ export const FilteringTable = () =>{
             useGlobalFilter,
             useSortBy
         )
+    const titleStyle = {
+            color: '#eee',            
+        }
 
     return (
         <>
-            <table {...getTableProps()}>
-            <thead>
-              {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {
-                    headerGroup.headers.map((column) => (
-                    <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                        {column.render('Header')}
-                        <div>
-                            {column.canFilter ? column.render('Filter') : null}
-                        </div>
-                        <span>
-                            {column.isSorted ? 
-                                (column.isSortedDesc ? 
-                                <FaSortAmountUp/> : 
-                                <FaSortAmountDown/>) : 
-                            ''}
-                        </span>
-                    </th>
+        <Navbar 
+           bg="dark" 
+           expand="lg"
+           responsive
+           sticky="top"
+           >  
+             <h2 style={titleStyle}>XtraMile React Front-End Assignment</h2>
+           </Navbar>
+            <Table 
+                striped 
+                bordered 
+                hover 
+                size="sm" 
+                responsive 
+                variant='dark' 
+                className="justify-content-md-center" 
+                condensed
+                {...getTableProps()}>
+                <thead>
+                  {headerGroups.map(headerGroup => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {
+                        headerGroup.headers.map((column) => (
+                        <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                            {column.render('Header')}
+                            <div>
+                                {column.canFilter ? column.render('Filter') : null}
+                            </div>
+                            <span>
+                                {column.isSorted ? 
+                                    (column.isSortedDesc ? 
+                                    <FaSortAmountUp/> : 
+                                    <FaSortAmountDown/>) : 
+                                ''}
+                            </span>
+                        </th>
+                      ))}
+                    </tr>
                   ))}
-                </tr>
-              ))}
-            </thead>
+                </thead>
                 <tbody {...getTableBodyProps()}>
                     {rows.map((row) => {
                         prepareRow(row) 
@@ -92,7 +113,7 @@ export const FilteringTable = () =>{
                         ))
                     }
                 </tfoot>
-            </table>
+            </Table>
         </>
     )
 }
