@@ -13,9 +13,22 @@ function BasicTable() {
         data:data,
     })
     return (
-        <div>
-            
-        </div>
+        <table>
+            <thread>
+                <tr>
+                    <th>
+
+                    </th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     )
 }
 
