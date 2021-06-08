@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/XtraMile-react-frontend-asignment/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/XtraMile-react-frontend-asignment/static/js/main.1417a893.chunk.js",
+    "main.js.map": "/XtraMile-react-frontend-asignment/static/js/main.1417a893.chunk.js.map",
+    "runtime-main.js": "/XtraMile-react-frontend-asignment/static/js/runtime-main.e33d06e4.js",
+    "runtime-main.js.map": "/XtraMile-react-frontend-asignment/static/js/runtime-main.e33d06e4.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/XtraMile-react-frontend-asignment/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d2e38b5.chunk.js": "/XtraMile-react-frontend-asignment/static/js/2.0d2e38b5.chunk.js",
+    "static/js/2.0d2e38b5.chunk.js.map": "/XtraMile-react-frontend-asignment/static/js/2.0d2e38b5.chunk.js.map",
+    "static/js/3.5786ef36.chunk.js": "/XtraMile-react-frontend-asignment/static/js/3.5786ef36.chunk.js",
+    "static/js/3.5786ef36.chunk.js.map": "/XtraMile-react-frontend-asignment/static/js/3.5786ef36.chunk.js.map",
+    "index.html": "/XtraMile-react-frontend-asignment/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/XtraMile-react-frontend-asignment/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/XtraMile-react-frontend-asignment/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.0d2e38b5.chunk.js.LICENSE.txt": "/XtraMile-react-frontend-asignment/static/js/2.0d2e38b5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e33d06e4.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d2e38b5.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.1417a893.chunk.js"
+  ]
+}
