@@ -4,7 +4,7 @@ import { COLUMNS } from './Columns'
 import './table.css'
 import { FaSortAmountUp, FaSortAmountDown } from 'react-icons/fa'
 
-export const SortingTable = () =>{
+export const Table = () =>{
 
     const [data, setData] = useState([])
 
