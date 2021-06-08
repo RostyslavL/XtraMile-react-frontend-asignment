@@ -13,11 +13,11 @@ table {
   
   table tr:hover {background-color: #eee;}
   
-  table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  table th, tfoot td{
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     background-color: #211855;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
   }
