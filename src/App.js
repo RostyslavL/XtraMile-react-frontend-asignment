@@ -1,11 +1,11 @@
 
 import './App.css';
-import {Table} from './components/Table.jsx'
+import {FilteringTable} from './components/FilteringTable.jsx'
 
 function App() {
   return (
     <div className="App">
-      <Table/>
+      <FilteringTable/>
     </div>
   );
 }

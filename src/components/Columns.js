@@ -1,94 +1,114 @@
+import {ColumnFilter} from './ColumnFilter.jsx'
+
 export const COLUMNS = [
     {
         Header: 'Id',
         Footer: 'Id',
-        accessor: 'id'
+        accessor: 'id',
+        Filter: ColumnFilter
     },
     {
         Header: 'Project',
         Footer: 'Project',
-        accessor:'project'
+        accessor:'project',
+        Filter: ColumnFilter
     },
     {
         Header:'Course',
         Footer: 'Course',
-        accessor:'course'
+        accessor:'course',
+        Filter: ColumnFilter
     },
     {
         Header:'Person',
         Footer: 'Person',
-        accessor:'person'
+        accessor:'person',
+        Filter: ColumnFilter
         
     },
     {
         Header:'Email',
         Footer: 'Email',
-        accessor:'email'
+        accessor:'email',
+        Filter: ColumnFilter
     },
     {
         Header:'Department',
         Footer:'Department',
-        accessor:'department'
+        accessor:'department',
+        Filter: ColumnFilter
     },
     {
         Header:'Location',
         Footer: 'Location',
-        accessor:'location'
+        accessor:'location',
+        Filter: ColumnFilter
     },
     {
         Header:'Course Started Date',
         Footer: 'Course Started Date',
-        accessor:'courseStartedDate'
+        accessor:'courseStartedDate',
+        Filter: ColumnFilter
     },
     {
         Header:'Opened Lessons Count',
         Footer: 'Opened Lessons Count',
-        accessor:'openedLessonsCount'
+        accessor:'openedLessonsCount',
+        Filter: ColumnFilter
     },
     {
         Header:'Completed Date',
         Footer: 'Completed Date',
-        accessor:'completedDate'
+        accessor:'completedDate',
+        Filter: ColumnFilter
     },
     {
         Header:'Completed Lessons Count',
         Footer: 'Completed Lessons Count',
-        accessor:'completedLessonsCount'
+        accessor:'completedLessonsCount',
+        Filter: ColumnFilter
     },
     {
         Header:'Total Lessons Count',
         Footer: 'Total Lessons Count',
-        accessor:'totalLessonsCount'
+        accessor:'totalLessonsCount',
+        Filter: ColumnFilter
     },
     {
         Header:'Have Not Started',
         Footer: 'Have Not Started',
-        accessor:'haveNotStarted'
+        accessor:'haveNotStarted',
+        Filter: ColumnFilter
     },
     {
         Header:'Not On Schedule',
         Footer: 'Not On Schedule',
-        accessor:'notOnSchedule'
+        accessor:'notOnSchedule',
+        Filter: ColumnFilter
     },
     {
         Header:'Have Started',
         Footer: 'Have Started',
-        accessor:'haveStarted'
+        accessor:'haveStarted',
+        Filter: ColumnFilter
     },
     {
         Header:'Quiz Score',
         Footer: 'Quiz Score',
-        accessor:'quizScore'
+        accessor:'quizScore',
+        Filter: ColumnFilter
     },
     {
         Header:'Quiz Score Total',
         Footer: 'Quiz Score Total',
-        accessor:'quizScoreTotal'
+        accessor:'quizScoreTotal',
+        Filter: ColumnFilter
     },
     {
         Header:'Certificate Title',
         Footer: 'Certificate Title',
-        accessor:'certificateTitle'
+        accessor:'certificateTitle',
+        Filter: ColumnFilter
     },
 ]
 
