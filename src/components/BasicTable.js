@@ -1,12 +1,22 @@
-import React , {useMemo }from 'react'
+import React , {useEffect,useState, useMemo }from 'react'
 import { useTable } from 'react-table'
-import MOCK_DATA from './MOCK_DATA.json'
 import { COLUMNS } from './Columns'
+import './table.css'
 
-function BasicTable() {
+export const BasicTable = () =>{
 
+    const [data, setData] = useState([])
+
+    const API_KEY = 'i34nvn324gdfg5'
+    const URL_ENDPOINT = `https://xtramile.azure-api.net/stats/lukaszcoding?apiSecret=${API_KEY}`
+  
+    useEffect(() =>{
+        fetch(URL_ENDPOINT)
+        .then((res) => res.json())
+        .then((json) => setData(json))
+      }, [URL_ENDPOINT])
+    
     const columns = useMemo(() => COLUMNS, [])
-    const data = useMemo(() => MOCK_DATA, [])
 
     const tableInstance = useTable({
         columns:columns,
@@ -23,21 +33,15 @@ function BasicTable() {
         } = tableInstance
     return (
         <table {...getTableProps()}>
-            <thread>
-                {
-                    headerGroups.map((headerGroup) =>(
-                        <tr {...headerGroup.getHeaderGroupProps()}>
-                            {
-                                headerGroup.headers.map(column => (
-                                    <th {...column.getHeaderGroupProps()}>
-                                        {column.render('Header')}
-                                    </th>
-                                ))
-                            }
-                        </tr>
-                    ))
-                }
-            </thread>
+        <thead>
+          {headerGroups.map(headerGroup => (
+            <tr {...headerGroup.getHeaderGroupProps()}>
+              {headerGroup.headers.map(column => (
+                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+              ))}
+            </tr>
+          ))}
+        </thead>
             <tbody {...getTableBodyProps()}>
                 {rows.map((row) => {
                     prepareRow(row) 
@@ -57,4 +61,3 @@ function BasicTable() {
     )
 }
 
-export default BasicTable
